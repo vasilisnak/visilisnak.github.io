@@ -14,9 +14,18 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
+				font-size: 17px;
+				color: #2d2d2d;
                 padding-top: 50px;
                 padding-bottom: 20px;
+				background-color: white;
             }
+			a {
+				color: #1d7bc1;
+			}
+			a:hover {
+				color: #0083fb;
+			}
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -43,34 +52,100 @@
 
 
 
-    <div class="container">
+    <div class="container" style="max-width:900px;">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <h2>Bio</h2>
-          <img src="">
-          I am a fourth year ph.D. student in the Theory of Computation group of Harvard University, advised by <a href="http://people.seas.harvard.edu/~minilek/" target="_blank">Prof. Jelani Nelson</a>. My research till now has focused on compressed sensing and streaming algorithms. I am mostly attracted to algorithmic problems that have a flavour of high-dimensional geometry. You can shoot me an e-mail if you find any paper of mine interesting; I tend to be very responsive.
-
+	 I hold a postdoc position at Saarland University, generously funded by <a href="https://people.mpi-inf.mpg.de/~kbringma/" target="_blank">Karl Bringmann's</a> <a href="http://erc.europa.eu/news/StG-recipients-2019/" target="_blank">ERC starting grant </a>. Before that, I obtained by Ph.D. from Harvard University, advised by <a href="https://people.eecs.berkeley.edu/~minilek/" target="_blank">Prof. Jelani Nelson</a>. You can contact me at vnakos AT mpi-inf DOT mpg DOT de if you have interest or questions in any of my papers. 
         </div>
       </div>
+      
+	<div class="row">
+	<div class="col-md-12">
 
+         <h2>Research Interests</h2> 
+	My research focuses on the following set of questions.
+	<ol>
+	<li> (<b>Sparse Fourier Transform</b>) Under which structural assumptions and under which error guarantees can we design algorithms that outperform the Fast Fourier Transform? <br></li>
+	<li> (<b>Compressed Sensing/ Linear Sketching</b>) Rapidly compress a very long vector, such that a fine approximation of it can be recovered very fast given its compressed form. In each possible scenario, how many bits do you need to compress, and how fast the compression, decompression algorithms can be? <br></li>
+	<li> (<b>Additive Combinatorics-Inspired Algorithms</b>) For problems like Subset Sum, Knapsack, (any sort of) convolution, how can we exploit the underlying additive structure to design faster algorithms?
+	<br></li>
+	</ol>
+	</div></div>
 
-      <div class="row">
+	
+	<div class="row">
         <div class="col-md-12">
-          <h2>Publications</h2>
+          <h2>Research Papers</h2> (author names in alphabetical order, except where *)
           <ol>
-            <li> Improved Algorithms for Adaptive Compressed Sensing <i>(Manuscript)</i> <br> Vasileios Nakos, Xiaofei Shi, David Woodruff, Hongyang Zhang </li>
-            <li> <a href="https://arxiv.org/abs/1712.01971" target="_blank"> Deterministic Heavy Hitters with Sublinear Query Time.</a> <i>(Manuscript)</i> <br> Yi Li, Vasileios Nakos</li>
-            <li> Low-Space Sparse Recovery Tasks with Optimized Update and Decoding Time.  <i>(Manuscript)</i> <br> Vasileios Nakos, Zhao Song, Zhengyu Wang </li>
-            <li> <a href="https://arxiv.org/pdf/1711.04049" target="_blank">One-Bit ExpanderSketch for One-Bit Compressed Sensing.</a>  <i>(Manuscript)</i><br> Vasileios Nakos </li>
-            <li> <a href="https://arxiv.org/pdf/1709.07308" target="_blank">Predicting Positive and Negative Links with Noisy Queries: Theory & Practice.</a>  <i>(Manuscript)</i> <br> Charalampos E. Tsourakakis, Michael Mitzenmacher, Jarosław Błasiok, Ben Lawson, Preetum Nakkiran, Vasileios Nakos </li>
-            <li> <a href="https://arxiv.org/pdf/1709.02917" target="_blank">Sublinear-Time Algorithms for Compressive Phase Retrieval.</a> <i>(Manuscript)</i> <br> Yi Li, Vasileios Nakos </li>
-            <li> <a href="https://arxiv.org/pdf/1709.02919" target="_blank">On Low-Risk Heavy Hitters and Sparse Recovery Schemes.</a>  <i>(Manuscript)</i> <br> Yi Li, Vasileios Nakos, David Woodruff</li>
-            <li> <a href="https://arxiv.org/pdf/1701.06437" target="_blank">Almost Optimal Phaseless Compressed Sensing with Sublinear Decoding Time.</a> (Proceedings of the 2017 IEEE International Symposium on Information Theory ISIT, Aachen, Germany, June 25-30) <br> Vasileios Nakos</li>
-            <li> <a href="https://arxiv.org/pdf/1603.08585.pdf" target="_blank">On Fast Decoding of High-Dimensional Signals from One-Bit Measurements.</a> (Proceedings of the 44th International Colloquium on Automata, Languages, and Programming ICALP, Warsaw, Poland, 10–14 July 2017)<br> Vasileios Nakos</li>
-          </ol>
 
-          <img src="">
+
+
+<li> Fast n-fold Boolean Convolution via Additive Combinatorics <br> 
+Karl Bringmann, Vasileios Nakos 
+<br></li>
+
+
+<li><a href="https://arxiv.org/abs/1903.00995" target="_blank">Deterministic Sparse Fourier Transform with an L_infty Guarantee. </a> 
+<br> Yi Li, Vasileios Nakos 
+<br></li>
+	    
+<li> Combinatorial Group Testing Schemes with Nearly Optimal Decoding Time.<br> Vasileios Nakos 
+<br></li>
+
+<li> Robust Sparse Recovery via Huber and Tukey loss <br> 
+Vasileios Nakos, Zhao Song, Zhengyu Wang 
+<br></li>
+	
+<li> <a href="https://arxiv.org/abs/1901.09355" target="_blank">Nearly Optimal Sparse Polynomial Multiplication.</a> 
+<br> Vasileios Nakos 
+<br></li>
+
+<li> Top-k Convolution and the Quest for Near-Linear Output-Sensitive Subset Sum <b>STOC 2020</b><br>
+Karl Bringmann, Vasileios Nakos
+<br></li>
+
+
+<li> <a href= https://arxiv.org/abs/1909.11123 target= "_blank"> (Nearly) Sample-Optimal Sparse Fourier Transform in Any Dimension; RIPless and Filterless </a><b>FOCS 2019</b>
+<br> Vasileios Nakos, Zhao Song, Zhengyu Wang
+<br></li>
+
+           
+<li> <a href="https://arxiv.org/abs/1903.02742" target="_blank" >Stronger L2/L2 Compressed Sensing; Without Iterating. </a> <b>STOC 2019</b>
+<br> Vasileios Nakos, Zhao Song
+<br></li>
+
+
+<li> <a href="https://arxiv.org/abs/1711.04049" target="_blank">One-Bit ExpanderSketch for One-Bit Compressed Sensing.</a> <b>ISIT 2019</b>
+<br>Vasileios Nakos 
+<br></li>
+
+
+<li> <a href="https://arxiv.org/abs/1709.07308" target="_blank">Predicting Positive and Negative Links with Noisy Queries: Theory & Practice.</a>(*) <b>Allerton 2018</b>
+<br> Charalampos E. Tsourakakis, Michael Mitzenmacher, Kasper Green Larsen, Jarosław Błasiok, Ben Lawson, Preetum Nakkiran, Vasileios Nakos 
+<br></li>	
+            <li> <a href= "https://arxiv.org/abs/1804.09673" target="_blank"> Improved Algorithms for Adaptive Compressed Sensing </a><b>ICALP 2018</b> 
+<br> Vasileios Nakos, Xiaofei Shi, David Woodruff, Hongyang Zhang 
+ <br></li>
+            <li> <a href="https://arxiv.org/abs/1709.02919" target="_blank">On Low-Risk Heavy Hitters and Sparse Recovery Schemes.</a> 
+<b>RANDOM/APPROX 2018</b>
+<br> Yi Li, Vasileios Nakos, David Woodruff
+ <br></li>
+            <li> <a href="https://arxiv.org/abs/1712.01971" target="_blank"> Deterministic Heavy Hitters with Sublinear Query Time.</a> <b>RANDOM/APPROX 2018</b>
+<br> Yi Li, Vasileios Nakos
+<br></li>
+            <li> <a href="https://arxiv.org/abs/1709.02917" target="_blank">Sublinear-Time Algorithms for Compressive Phase Retrieval.</a> 
+<b>ISIT 2018</b>
+ <br> Yi Li, Vasileios Nakos 
+ <br></li>
+            <li> <a href="https://arxiv.org/abs/1701.06437" target="_blank">Almost Optimal Phaseless Compressed Sensing with Sublinear Decoding Time.</a><b>ISIT 2017</b>
+<br> Vasileios Nakos
+ <br></li>
+            <li> <a href="https://arxiv.org/abs/1603.08585" target="_blank">On Fast Decoding of High-Dimensional Signals from One-Bit Measurements.</a> <b>ICALP 2017</b>
+<br> Vasileios Nakos
+<br></li>
+          </ol>
         </div>
       </div>
 
